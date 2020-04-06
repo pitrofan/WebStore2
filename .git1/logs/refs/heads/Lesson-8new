@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 6aef18bb280262449fa58009ed6e2b0bc5487100 sel <sel@sel.ru> 1585397537 +0300	branch: Created from 6aef18bb280262449fa58009ed6e2b0bc5487100
+6aef18bb280262449fa58009ed6e2b0bc5487100 726f49792338528427da4d3832229524bed93dcc sel <sel@sel.ru> 1585398890 +0300	commit: Исправление потенциальной дыры в сервисе корзины. (когда при заказе товара и его отсутствии в базе - была бы ошибка)
+726f49792338528427da4d3832229524bed93dcc 7234d52efb98368d724a6d36a7fea7a5f7a9c2f2 sel <sel@sel.ru> 1585399666 +0300	commit: Создание области Amin
+7234d52efb98368d724a6d36a7fea7a5f7a9c2f2 919d7ee42dd0b04c5f93fbdea0406f12a24ee2d5 sel <sel@sel.ru> 1585479053 +0300	commit (amend): Создание области Admin
+919d7ee42dd0b04c5f93fbdea0406f12a24ee2d5 4e6c791aab3e55683e4cb8a9337dce99a23b8784 sel <sel@sel.ru> 1585479088 +0300	commit: Создание представлений области администратора
+4e6c791aab3e55683e4cb8a9337dce99a23b8784 0715d0b6f64e6ec4422ab68a52a4a45ebc7e9538 sel <sel@sel.ru> 1585488367 +0300	commit: Область Администратора - развитие
+0715d0b6f64e6ec4422ab68a52a4a45ebc7e9538 cc678ab06b8d86f466506ca782d1ab6ca653631f sel <sel@sel.ru> 1585504378 +0300	commit: Список товаров в админке
+cc678ab06b8d86f466506ca782d1ab6ca653631f 9e9ac86c90b379486a8f7393fefc66f53e7adc9e sel <sel@sel.ru> 1585506273 +0300	commit: Заготовка методов добавления и редактирования товаров
+9e9ac86c90b379486a8f7393fefc66f53e7adc9e 896904ed13f9dc988c14c37b9f3dd62cb5a996c4 sel <sel@sel.ru> 1585508065 +0300	commit: Интерфейс сервиса заказов
+896904ed13f9dc988c14c37b9f3dd62cb5a996c4 5a8efd29ad0b081e69e1dfcc1352488a590fb1b8 sel <sel@sel.ru> 1585568420 +0300	commit: Реализация сервиса заказов.
+5a8efd29ad0b081e69e1dfcc1352488a590fb1b8 f9fd409f09f3e0fea4ece4a036254e63d211b963 sel <sel@sel.ru> 1585568668 +0300	commit: Миграция БД - Заказа
+f9fd409f09f3e0fea4ece4a036254e63d211b963 676d84130ca189b8dabe6186f2ba605b0e2a37fb sel <sel@sel.ru> 1585592353 +0300	commit: Оформление заказа
+676d84130ca189b8dabe6186f2ba605b0e2a37fb cc3a28d2aa5c6c34eb35c81355fbd623765a9e76 sel <sel@sel.ru> 1585595388 +0300	commit: Заготовка профиля пользователя

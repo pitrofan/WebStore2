@@ -1,0 +1,134 @@
+0000000000000000000000000000000000000000 d9092041b12640e442819188fd6a28ec260de046 fuser85 <fuser85@myoffice365.site> 1583494966 +0300	commit (initial): Добавьте GITIGNORE- и GITATTRIBUTES-файлы.
+d9092041b12640e442819188fd6a28ec260de046 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef fuser85 <fuser85@myoffice365.site> 1583494970 +0300	commit: Добавьте файлы проекта.
+2f1a3bb4fd5896fe71542afe0631204f8d62e2ef 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef fuser85 <fuser85@myoffice365.site> 1583509955 +0300	checkout: moving from master to Lesson-1
+2f1a3bb4fd5896fe71542afe0631204f8d62e2ef e55e3721110a3f88a34dd89849fcf920023953fd fuser85 <fuser85@myoffice365.site> 1583569042 +0300	commit: Рефакторинг
+e55e3721110a3f88a34dd89849fcf920023953fd 1bb5565c34b4bfdecce8d5d250a595902da9d6e7 fuser85 <fuser85@myoffice365.site> 1583784261 +0300	commit: Пример работы с конфигурацией.
+1bb5565c34b4bfdecce8d5d250a595902da9d6e7 ead750217e80b4c35fb6b25791dc0164611ccc21 fuser85 <fuser85@myoffice365.site> 1583784380 +0300	commit: Пример динамического чтения конфигурации
+ead750217e80b4c35fb6b25791dc0164611ccc21 9c719d8e7cf24d6ba73eb69009b1bb8b44286b4b fuser85 <fuser85@myoffice365.site> 1583784716 +0300	commit: Статическое содержимое сайта
+9c719d8e7cf24d6ba73eb69009b1bb8b44286b4b ad32e8c20e3aaffe75ebbac0c677004bbf673820 fuser85 <fuser85@myoffice365.site> 1583785600 +0300	commit: Первый контроллер
+ad32e8c20e3aaffe75ebbac0c677004bbf673820 2cfb94e49861789015b82dd2c06bd0a28cddd14a fuser85 <fuser85@myoffice365.site> 1583785809 +0300	commit: Статическая Html страница
+2cfb94e49861789015b82dd2c06bd0a28cddd14a 146201ffbf7f235ddbe7e6a0fb55313743c0fb40 fuser85 <fuser85@myoffice365.site> 1583788163 +0300	commit: Представление
+146201ffbf7f235ddbe7e6a0fb55313743c0fb40 3c290424f72ff5f51a3dee7398b4e7472bff1183 fuser85 <fuser85@myoffice365.site> 1583789492 +0300	commit: Пример работы с моделью
+3c290424f72ff5f51a3dee7398b4e7472bff1183 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef fuser85 <fuser85@myoffice365.site> 1583789860 +0300	checkout: moving from Lesson-1 to master
+2f1a3bb4fd5896fe71542afe0631204f8d62e2ef a43da1e76031a2038acb6925f242d1e53a8c18fc fuser85 <fuser85@myoffice365.site> 1583789900 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+a43da1e76031a2038acb6925f242d1e53a8c18fc a43da1e76031a2038acb6925f242d1e53a8c18fc fuser85 <fuser85@myoffice365.site> 1583789971 +0300	checkout: moving from master to Lesson-2
+a43da1e76031a2038acb6925f242d1e53a8c18fc d7d1bb0ee3d1bfacfc1ba58017a3e033d4d35b82 fuser85 <fuser85@myoffice365.site> 1583831528 +0300	commit: Подключение динамической компиляции представлений Razor
+d7d1bb0ee3d1bfacfc1ba58017a3e033d4d35b82 af92e5b570dbaee6391d57249d3d4f8c6aa41a71 fuser85 <fuser85@myoffice365.site> 1583832481 +0300	commit: Ресурсы дизайнерского шаблона - стили, шрифты
+af92e5b570dbaee6391d57249d3d4f8c6aa41a71 da39fe5bbd0f46665a895a8e2990ec9ad77722f6 fuser85 <fuser85@myoffice365.site> 1583836927 +0300	commit: Разбиение макет-страницы на частичные представления
+da39fe5bbd0f46665a895a8e2990ec9ad77722f6 642656f35f194dbc3e00924bf81941c64909db3f fuser85 <fuser85@myoffice365.site> 1583839851 +0300	commit: Дизайн основных представлений
+642656f35f194dbc3e00924bf81941c64909db3f e8903b21398dc45a62bfd73947cc0ee99d9406ed fuser85 <fuser85@myoffice365.site> 1583853928 +0300	commit: Дизайн...
+e8903b21398dc45a62bfd73947cc0ee99d9406ed 84d97ff3579bc2c3a925d53af46dec8145485582 fuser85 <fuser85@myoffice365.site> 1583855132 +0300	commit: Сотрудники выделены в отдельный контроллер
+84d97ff3579bc2c3a925d53af46dec8145485582 f273f3a19c5ac9e5a3bd69e1e58acf67710274d3 fuser85 <fuser85@myoffice365.site> 1583859065 +0300	commit: Секции в макете
+f273f3a19c5ac9e5a3bd69e1e58acf67710274d3 dc0285c0ad75b507bdfaf612ff9d1fac9794cbe7 fuser85 <fuser85@myoffice365.site> 1583859751 +0300	commit: Связь с браузером
+dc0285c0ad75b507bdfaf612ff9d1fac9794cbe7 864bdc0e33fd02c94e722ed0bf365f41910cd3a4 fuser85 <fuser85@myoffice365.site> 1583862205 +0300	commit: Подключение клиентских библиотек
+864bdc0e33fd02c94e722ed0bf365f41910cd3a4 d26e20e73e8f265460546cadb53ea5ea31daed49 fuser85 <fuser85@myoffice365.site> 1583862440 +0300	commit (amend): Подключение клиентских библиотек
+d26e20e73e8f265460546cadb53ea5ea31daed49 a43da1e76031a2038acb6925f242d1e53a8c18fc fuser85 <fuser85@myoffice365.site> 1583862909 +0300	checkout: moving from Lesson-2 to master
+a43da1e76031a2038acb6925f242d1e53a8c18fc d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 fuser85 <fuser85@myoffice365.site> 1583862927 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 fuser85 <fuser85@myoffice365.site> 1583873990 +0300	checkout: moving from master to Lesson-3
+d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 106536e6a0234147dad4330c32d97c700836f584 fuser85 <fuser85@myoffice365.site> 1583920439 +0300	commit: Пример использования промежуточного ПО
+106536e6a0234147dad4330c32d97c700836f584 a32cb76599b3a8c99f201bd9fd44cec9498f02d2 fuser85 <fuser85@myoffice365.site> 1583920816 +0300	commit: Пример маршрутизации
+a32cb76599b3a8c99f201bd9fd44cec9498f02d2 e9bc7ff2b452d66a0c357c1a747c336207894e65 fuser85 <fuser85@myoffice365.site> 1583922211 +0300	commit: Сервис управления сотрудниками
+e9bc7ff2b452d66a0c357c1a747c336207894e65 7de457661d04922f150cccefcd161313f2b63161 fuser85 <fuser85@myoffice365.site> 1583923002 +0300	commit: Внедрение зависимости в контроллер сотрудников
+7de457661d04922f150cccefcd161313f2b63161 84462af54f305993cb497aa10e881f048273393e fuser85 <fuser85@myoffice365.site> 1583925340 +0300	commit: Редактирование сотрудника
+84462af54f305993cb497aa10e881f048273393e a865f58bf7b4c1f9fd61b10eded50aa820c182da fuser85 <fuser85@myoffice365.site> 1583927979 +0300	commit: Создание нового сотрудника
+a865f58bf7b4c1f9fd61b10eded50aa820c182da 429dd47ea8268a2bf1219838c6fc70dc9920eb35 fuser85 <fuser85@myoffice365.site> 1583933229 +0300	commit: Валидация
+429dd47ea8268a2bf1219838c6fc70dc9920eb35 d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 fuser85 <fuser85@myoffice365.site> 1583933459 +0300	checkout: moving from Lesson-3 to master
+d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 92d6ae7342c0da5b72461f15a20952875fcc3c44 fuser85 <fuser85@myoffice365.site> 1583933468 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+92d6ae7342c0da5b72461f15a20952875fcc3c44 92d6ae7342c0da5b72461f15a20952875fcc3c44 ���� <����@ADM_Nout.(none)> 1584210309 +0300	checkout: moving from master to Lesson-4
+92d6ae7342c0da5b72461f15a20952875fcc3c44 6cdb2b66f4f6f0b4e3df0ff69e68e24895d038ea sel <sel@sel.ru> 1584214274 +0300	commit: Валидация модели данных
+6cdb2b66f4f6f0b4e3df0ff69e68e24895d038ea 7fb805f835c5960250a212614520a0620b1b1ade sel <sel@sel.ru> 1584226652 +0300	commit: Базовые сущности доменной области
+7fb805f835c5960250a212614520a0620b1b1ade 19bc21f81e0548a7d871f29bb5e1f1c66d9fc29c sel <sel@sel.ru> 1584227233 +0300	commit: Бренд и секцие - первые доменные модели
+19bc21f81e0548a7d871f29bb5e1f1c66d9fc29c 584d6bd191404b93561872f713fc9350cd6661b9 sel <sel@sel.ru> 1584272037 +0300	commit: Визуальный компонент секций
+584d6bd191404b93561872f713fc9350cd6661b9 b56663a7229fee3c36866ccec008ea934e3d25c3 sel <sel@sel.ru> 1584275526 +0300	commit: Компонент отрисовки брендов
+b56663a7229fee3c36866ccec008ea934e3d25c3 04e02b483badd9b845153e51e66840e27be9a34b sel <sel@sel.ru> 1584276477 +0300	commit: Сущность-товар, тестовые данные, недостающие картинки
+04e02b483badd9b845153e51e66840e27be9a34b bafb30e27aeb7def35a14c4dbb85a15e65b2f9e4 sel <sel@sel.ru> 1584278133 +0300	commit: Товар
+bafb30e27aeb7def35a14c4dbb85a15e65b2f9e4 6b20cb69c58ffbc11fadfb9bb8633d2437b043bd sel <sel@sel.ru> 1584284228 +0300	commit: Каталог товаров
+6b20cb69c58ffbc11fadfb9bb8633d2437b043bd dc9aa679c3766a271d79f85495b574e636718fde sel <sel@sel.ru> 1584314454 +0300	commit (amend): Каталог товаров
+dc9aa679c3766a271d79f85495b574e636718fde 92d6ae7342c0da5b72461f15a20952875fcc3c44 sel <sel@sel.ru> 1584314552 +0300	checkout: moving from Lesson-4 to master
+92d6ae7342c0da5b72461f15a20952875fcc3c44 82af87a3cd9bfb11dc0459b612da3d06406a82b8 sel <sel@sel.ru> 1584314560 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+82af87a3cd9bfb11dc0459b612da3d06406a82b8 82af87a3cd9bfb11dc0459b612da3d06406a82b8 sel <sel@sel.ru> 1584523677 +0300	checkout: moving from master to Lesson-5
+82af87a3cd9bfb11dc0459b612da3d06406a82b8 c82c6f2439083ae88a0e5c5b3340e691f29aafcc sel <sel@sel.ru> 1584538620 +0300	commit: Подготовка сущностей кразмещению в БД
+c82c6f2439083ae88a0e5c5b3340e691f29aafcc 16c89db7c8d8a91433f9f7228944034425e0dcc5 sel <sel@sel.ru> 1584539767 +0300	commit: Проект 'Слоя данных'
+16c89db7c8d8a91433f9f7228944034425e0dcc5 362daa3f7bc16b7314270465cc17d75bfb684aa1 sel <sel@sel.ru> 1584541687 +0300	commit: Контекст ДБ
+362daa3f7bc16b7314270465cc17d75bfb684aa1 20b6d0007db298f88a3d7fa65810ee3b4c28dcc1 sel <sel@sel.ru> 1584559045 +0300	commit: Инициализатор БД
+20b6d0007db298f88a3d7fa65810ee3b4c28dcc1 00f84997674bd006f9c6ac480f0161034491954f sel <sel@sel.ru> 1584613283 +0300	commit: Миграции
+00f84997674bd006f9c6ac480f0161034491954f 75aea8a4c65c75a49f7cc64f14e4f9cd402f0699 sel <sel@sel.ru> 1584622758 +0300	commit: Рефакторинг сервисов хранения данных в памяти
+75aea8a4c65c75a49f7cc64f14e4f9cd402f0699 b1468dacdee88b0b4713856fda92a47660dc4e0e sel <sel@sel.ru> 1584625161 +0300	commit: Сервис тваров в БД
+b1468dacdee88b0b4713856fda92a47660dc4e0e b4feae16953b857bfe4f3d24f85c3ff8bbf16d76 sel <sel@sel.ru> 1584627615 +0300	commit: Подключение сервисов БД товаров
+b4feae16953b857bfe4f3d24f85c3ff8bbf16d76 3415b5c16eee162ff3a8f3f7cf4bea091f8be38d sel <sel@sel.ru> 1584630326 +0300	commit: Восстановление работы главной страницы
+3415b5c16eee162ff3a8f3f7cf4bea091f8be38d f00e7162f05ff7570af3708001d59e5043448f0c sel <sel@sel.ru> 1584636646 +0300	commit: Проекция данных моделей
+f00e7162f05ff7570af3708001d59e5043448f0c f8fae84c061fa3b5f02dbd1e3990aacc1b4c04bf sel <sel@sel.ru> 1584636736 +0300	commit: Рефакторинг
+f8fae84c061fa3b5f02dbd1e3990aacc1b4c04bf 82af87a3cd9bfb11dc0459b612da3d06406a82b8 sel <sel@sel.ru> 1584646374 +0300	checkout: moving from Lesson-5 to master
+82af87a3cd9bfb11dc0459b612da3d06406a82b8 ed166a8531a3f708dfb0b6b029134bc3072013b4 sel <sel@sel.ru> 1584646406 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+ed166a8531a3f708dfb0b6b029134bc3072013b4 ed166a8531a3f708dfb0b6b029134bc3072013b4 sel <sel@sel.ru> 1584646696 +0300	checkout: moving from master to HomeWork-5
+ed166a8531a3f708dfb0b6b029134bc3072013b4 792897dfb09a088599e68385cae61149ed738ee4 sel <sel@sel.ru> 1584693439 +0300	commit: Рефакторинг модели Employee
+792897dfb09a088599e68385cae61149ed738ee4 f45b8f8fd70479ca029da60545845d09de34420f sel <sel@sel.ru> 1584693576 +0300	commit (amend): Рефакторинг модели Employee
+f45b8f8fd70479ca029da60545845d09de34420f c6e50c40843fae8a487cce2042a8ef262457f777 sel <sel@sel.ru> 1584693936 +0300	commit (amend): Рефакторинг модели Employee
+c6e50c40843fae8a487cce2042a8ef262457f777 4c817c48e4d0afb171fa1023b388cd3af2e1a792 sel <sel@sel.ru> 1584695059 +0300	commit: Реализация класса SqlEmployeeData
+4c817c48e4d0afb171fa1023b388cd3af2e1a792 a455c68d5c8b0befa20fa236979a20ae9cd510bd sel <sel@sel.ru> 1584695537 +0300	commit: Добавлено в инициализацию БД данные Employees
+a455c68d5c8b0befa20fa236979a20ae9cd510bd a6475ffa13ec2de358e7b89c876dea6b3a137a36 sel <sel@sel.ru> 1584695660 +0300	commit: Добавлена миграция Employees
+a6475ffa13ec2de358e7b89c876dea6b3a137a36 337737ed016988b92bbe53235371e616efe68658 sel <sel@sel.ru> 1584695736 +0300	commit: Исправлен сервис SqlEmployeeData
+337737ed016988b92bbe53235371e616efe68658 511454e7daac5a294306c6a9b0062780bd90ae03 sel <sel@sel.ru> 1584696045 +0300	commit: Исправлено заполнение БД таблицы Employees
+511454e7daac5a294306c6a9b0062780bd90ae03 ed166a8531a3f708dfb0b6b029134bc3072013b4 sel <sel@sel.ru> 1584696613 +0300	checkout: moving from HomeWork-5 to master
+ed166a8531a3f708dfb0b6b029134bc3072013b4 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1584696653 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+06eb5e723a8c991943d75d4e7028a776c38a97ff 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1584739600 +0300	checkout: moving from master to Lesson-6
+06eb5e723a8c991943d75d4e7028a776c38a97ff f97ebfe662438abc04f573e071d5f021818ec6e6 sel <sel@sel.ru> 1584740523 +0300	commit: Подключение библиотеки Identity для доменной области
+f97ebfe662438abc04f573e071d5f021818ec6e6 306bd2d7e79237b37ad3c628f5ce6047cb0dc7cd sel <sel@sel.ru> 1584742024 +0300	commit: Сущности Пользователь и Роль
+306bd2d7e79237b37ad3c628f5ce6047cb0dc7cd 0807cba3678dfbd41aed9134a4af493fa74a7feb sel <sel@sel.ru> 1584742523 +0300	commit: Изменение типа контекста БД для обеспечения хранения учетных данных пользователей
+0807cba3678dfbd41aed9134a4af493fa74a7feb 69b562f67ea11153f56c8b5fc418ce08c64ae6cc sel <sel@sel.ru> 1584744341 +0300	commit: Миграция Identity
+69b562f67ea11153f56c8b5fc418ce08c64ae6cc b27d2fac76aada9f4da6e543b01b4f92115ec319 sel <sel@sel.ru> 1584747318 +0300	commit: Настройка системы авторизации
+b27d2fac76aada9f4da6e543b01b4f92115ec319 eb526e752232c139592df7be3dd58240e581d2e1 sel <sel@sel.ru> 1584747341 +0300	commit (amend): Настройка системы авторизации
+eb526e752232c139592df7be3dd58240e581d2e1 6db7c4b563812efb469ec214bcc83f9a82d6171b sel <sel@sel.ru> 1584749476 +0300	commit: Исправление нововедений .NET Core 3..1
+6db7c4b563812efb469ec214bcc83f9a82d6171b fa4aa9daf3a5f50d195aaa4f519dc5fd89275ca8 sel <sel@sel.ru> 1584750576 +0300	commit: Контроллер Account + представления к нему
+fa4aa9daf3a5f50d195aaa4f519dc5fd89275ca8 59495227d2221c42a4003d80b3c39d55c17ab90f sel <sel@sel.ru> 1584783306 +0300	commit: Модели представления механизма регистрации и авторизации
+59495227d2221c42a4003d80b3c39d55c17ab90f 4e706ea50c624bf4443a08ee7737cfb096fbc589 sel <sel@sel.ru> 1584786469 +0300	commit: Логика регистрации пользователя в системе
+4e706ea50c624bf4443a08ee7737cfb096fbc589 b57b74943a06efe66d88dbd57d85d13400cd79db sel <sel@sel.ru> 1584790180 +0300	commit: Редактируем заголовок для добавления ссылки на форму входа
+b57b74943a06efe66d88dbd57d85d13400cd79db 560094b841da9223706a82e4db68f600dcd9b47d sel <sel@sel.ru> 1584791372 +0300	commit: Визуальный компонент. Отображение информации пользователя в Header
+560094b841da9223706a82e4db68f600dcd9b47d acaf28152d00a6f7f6acb9c8b409b0d62c132878 sel <sel@sel.ru> 1584791670 +0300	commit: Удаление представления Login из контроллера Home
+acaf28152d00a6f7f6acb9c8b409b0d62c132878 be301dccc715def09b2d66464ec32206e763ee5d sel <sel@sel.ru> 1584793875 +0300	commit: Реализация механизма входа пользователя в систему
+be301dccc715def09b2d66464ec32206e763ee5d bcc4bb4ebdfec4a72d80b453b4d6240f473d4ac6 sel <sel@sel.ru> 1584794423 +0300	commit (amend): Реализация механизма входа пользователя в систему
+bcc4bb4ebdfec4a72d80b453b4d6240f473d4ac6 8355e8ed66a98d9014b79b3b8146965f38443e7a sel <sel@sel.ru> 1584794615 +0300	commit (amend): Реализация механизма входа пользователя в систему
+8355e8ed66a98d9014b79b3b8146965f38443e7a 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1585141796 +0300	checkout: moving from Lesson-6 to master
+06eb5e723a8c991943d75d4e7028a776c38a97ff 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1585141930 +0300	reset: moving to HEAD
+06eb5e723a8c991943d75d4e7028a776c38a97ff 8355e8ed66a98d9014b79b3b8146965f38443e7a sel <sel@sel.ru> 1585141932 +0300	checkout: moving from master to Lesson-6
+8355e8ed66a98d9014b79b3b8146965f38443e7a 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1585142173 +0300	checkout: moving from Lesson-6 to master
+06eb5e723a8c991943d75d4e7028a776c38a97ff 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585142233 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+8060cabb5a0c6f082d3041366718288363751ab3 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585142331 +0300	checkout: moving from master to Lesson-7
+8060cabb5a0c6f082d3041366718288363751ab3 c2bb6aa922829eb38deb16de283dc7298e17f0e4 sel <sel@sel.ru> 1585146112 +0300	commit: Минификация стилей
+c2bb6aa922829eb38deb16de283dc7298e17f0e4 a6405a458e9cb9d0b3d7d910298a4e64a4e02cc3 sel <sel@sel.ru> 1585147012 +0300	commit: Минификация скрипто
+a6405a458e9cb9d0b3d7d910298a4e64a4e02cc3 884e668c71ebbfdca42b21914c4747760b08a989 sel <sel@sel.ru> 1585151499 +0300	commit (amend): Минификация скрипто
+884e668c71ebbfdca42b21914c4747760b08a989 966caa5e519ef720321f2684ba728907dff75671 sel <sel@sel.ru> 1585151523 +0300	commit (amend): Минификация скриптов
+966caa5e519ef720321f2684ba728907dff75671 6eb02e34720eeae1aa9e6a58f66a0dd0f83f4b2b sel <sel@sel.ru> 1585163154 +0300	commit: Защитадоступа на основе ролей
+6eb02e34720eeae1aa9e6a58f66a0dd0f83f4b2b 913636206a5c379220118b19d195a3595195727e sel <sel@sel.ru> 1585163198 +0300	commit (amend): Защита доступа на основе ролей
+913636206a5c379220118b19d195a3595195727e 229c9c6c9e075da328c7db715ad9963d5b155506 sel <sel@sel.ru> 1585163663 +0300	commit (amend): Защита доступа на основе ролей
+229c9c6c9e075da328c7db715ad9963d5b155506 383cf33ce2b3dc36042c76dfb6748256600770a4 sel <sel@sel.ru> 1585223311 +0300	commit: Страница деталей товара
+383cf33ce2b3dc36042c76dfb6748256600770a4 b56fd3c0312631c4416b6e7c05e5cf32d1669d2c sel <sel@sel.ru> 1585224571 +0300	commit: Описание модели и сервиса корзины
+b56fd3c0312631c4416b6e7c05e5cf32d1669d2c b28fccdf38ce8c6e1cbcc257965538bcf1b38881 sel <sel@sel.ru> 1585247422 +0300	commit: Сервис корзины
+b28fccdf38ce8c6e1cbcc257965538bcf1b38881 359ccc93309803fc9ad40f8a988126d29369df87 sel <sel@sel.ru> 1585254360 +0300	commit: Корзина товаров покупателя
+359ccc93309803fc9ad40f8a988126d29369df87 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585254743 +0300	checkout: moving from Lesson-7 to master
+8060cabb5a0c6f082d3041366718288363751ab3 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585395732 +0300	checkout: moving from master to Lesson-8
+8060cabb5a0c6f082d3041366718288363751ab3 faf2f8b06db4ee1f97a7d985ee3720505c211f1c sel <sel@sel.ru> 1585396311 +0300	commit: Прятание
+faf2f8b06db4ee1f97a7d985ee3720505c211f1c 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585396359 +0300	checkout: moving from Lesson-8 to master
+8060cabb5a0c6f082d3041366718288363751ab3 359ccc93309803fc9ad40f8a988126d29369df87 sel <sel@sel.ru> 1585396613 +0300	checkout: moving from master to Lesson-7
+359ccc93309803fc9ad40f8a988126d29369df87 74c66217e23295a0494a43038422aa81bf269779 sel <sel@sel.ru> 1585396791 +0300	commit: Правка
+74c66217e23295a0494a43038422aa81bf269779 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585397298 +0300	checkout: moving from Lesson-7 to master
+8060cabb5a0c6f082d3041366718288363751ab3 6aef18bb280262449fa58009ed6e2b0bc5487100 sel <sel@sel.ru> 1585397340 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+6aef18bb280262449fa58009ed6e2b0bc5487100 6aef18bb280262449fa58009ed6e2b0bc5487100 sel <sel@sel.ru> 1585397541 +0300	checkout: moving from master to Lesson-8new
+6aef18bb280262449fa58009ed6e2b0bc5487100 726f49792338528427da4d3832229524bed93dcc sel <sel@sel.ru> 1585398890 +0300	commit: Исправление потенциальной дыры в сервисе корзины. (когда при заказе товара и его отсутствии в базе - была бы ошибка)
+726f49792338528427da4d3832229524bed93dcc 7234d52efb98368d724a6d36a7fea7a5f7a9c2f2 sel <sel@sel.ru> 1585399666 +0300	commit: Создание области Amin
+7234d52efb98368d724a6d36a7fea7a5f7a9c2f2 919d7ee42dd0b04c5f93fbdea0406f12a24ee2d5 sel <sel@sel.ru> 1585479053 +0300	commit (amend): Создание области Admin
+919d7ee42dd0b04c5f93fbdea0406f12a24ee2d5 4e6c791aab3e55683e4cb8a9337dce99a23b8784 sel <sel@sel.ru> 1585479088 +0300	commit: Создание представлений области администратора
+4e6c791aab3e55683e4cb8a9337dce99a23b8784 0715d0b6f64e6ec4422ab68a52a4a45ebc7e9538 sel <sel@sel.ru> 1585488367 +0300	commit: Область Администратора - развитие
+0715d0b6f64e6ec4422ab68a52a4a45ebc7e9538 cc678ab06b8d86f466506ca782d1ab6ca653631f sel <sel@sel.ru> 1585504378 +0300	commit: Список товаров в админке
+cc678ab06b8d86f466506ca782d1ab6ca653631f 9e9ac86c90b379486a8f7393fefc66f53e7adc9e sel <sel@sel.ru> 1585506273 +0300	commit: Заготовка методов добавления и редактирования товаров
+9e9ac86c90b379486a8f7393fefc66f53e7adc9e 896904ed13f9dc988c14c37b9f3dd62cb5a996c4 sel <sel@sel.ru> 1585508065 +0300	commit: Интерфейс сервиса заказов
+896904ed13f9dc988c14c37b9f3dd62cb5a996c4 5a8efd29ad0b081e69e1dfcc1352488a590fb1b8 sel <sel@sel.ru> 1585568420 +0300	commit: Реализация сервиса заказов.
+5a8efd29ad0b081e69e1dfcc1352488a590fb1b8 f9fd409f09f3e0fea4ece4a036254e63d211b963 sel <sel@sel.ru> 1585568668 +0300	commit: Миграция БД - Заказа
+f9fd409f09f3e0fea4ece4a036254e63d211b963 676d84130ca189b8dabe6186f2ba605b0e2a37fb sel <sel@sel.ru> 1585592353 +0300	commit: Оформление заказа
+676d84130ca189b8dabe6186f2ba605b0e2a37fb cc3a28d2aa5c6c34eb35c81355fbd623765a9e76 sel <sel@sel.ru> 1585595388 +0300	commit: Заготовка профиля пользователя
+cc3a28d2aa5c6c34eb35c81355fbd623765a9e76 cc3a28d2aa5c6c34eb35c81355fbd623765a9e76 sel <sel@sel.ru> 1586102490 +0300	checkout: moving from Lesson-8new to Lesson-8new2
+cc3a28d2aa5c6c34eb35c81355fbd623765a9e76 06ed14d8b14e24363802ab383fe95a357ed2e1d5 sel <sel@sel.ru> 1586190745 +0300	commit: Рефакт
+06ed14d8b14e24363802ab383fe95a357ed2e1d5 6aef18bb280262449fa58009ed6e2b0bc5487100 sel <sel@sel.ru> 1586190828 +0300	checkout: moving from Lesson-8new2 to master
+6aef18bb280262449fa58009ed6e2b0bc5487100 804a05498c2c6c072876b401f0052682d1a8c266 sel <sel@sel.ru> 1586190889 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+804a05498c2c6c072876b401f0052682d1a8c266 06ed14d8b14e24363802ab383fe95a357ed2e1d5 sel <sel@sel.ru> 1586190942 +0300	checkout: moving from master to Lesson-8new2
+06ed14d8b14e24363802ab383fe95a357ed2e1d5 804a05498c2c6c072876b401f0052682d1a8c266 sel <sel@sel.ru> 1586191158 +0300	checkout: moving from Lesson-8new2 to master

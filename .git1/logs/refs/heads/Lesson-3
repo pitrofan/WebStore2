@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 fuser85 <fuser85@myoffice365.site> 1583873989 +0300	branch: Created from d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2
+d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 106536e6a0234147dad4330c32d97c700836f584 fuser85 <fuser85@myoffice365.site> 1583920439 +0300	commit: Пример использования промежуточного ПО
+106536e6a0234147dad4330c32d97c700836f584 a32cb76599b3a8c99f201bd9fd44cec9498f02d2 fuser85 <fuser85@myoffice365.site> 1583920816 +0300	commit: Пример маршрутизации
+a32cb76599b3a8c99f201bd9fd44cec9498f02d2 e9bc7ff2b452d66a0c357c1a747c336207894e65 fuser85 <fuser85@myoffice365.site> 1583922211 +0300	commit: Сервис управления сотрудниками
+e9bc7ff2b452d66a0c357c1a747c336207894e65 7de457661d04922f150cccefcd161313f2b63161 fuser85 <fuser85@myoffice365.site> 1583923002 +0300	commit: Внедрение зависимости в контроллер сотрудников
+7de457661d04922f150cccefcd161313f2b63161 84462af54f305993cb497aa10e881f048273393e fuser85 <fuser85@myoffice365.site> 1583925340 +0300	commit: Редактирование сотрудника
+84462af54f305993cb497aa10e881f048273393e a865f58bf7b4c1f9fd61b10eded50aa820c182da fuser85 <fuser85@myoffice365.site> 1583927979 +0300	commit: Создание нового сотрудника
+a865f58bf7b4c1f9fd61b10eded50aa820c182da 429dd47ea8268a2bf1219838c6fc70dc9920eb35 fuser85 <fuser85@myoffice365.site> 1583933229 +0300	commit: Валидация

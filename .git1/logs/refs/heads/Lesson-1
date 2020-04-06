@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef fuser85 <fuser85@myoffice365.site> 1583509955 +0300	branch: Created from 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef
+2f1a3bb4fd5896fe71542afe0631204f8d62e2ef e55e3721110a3f88a34dd89849fcf920023953fd fuser85 <fuser85@myoffice365.site> 1583569042 +0300	commit: Рефакторинг
+e55e3721110a3f88a34dd89849fcf920023953fd 1bb5565c34b4bfdecce8d5d250a595902da9d6e7 fuser85 <fuser85@myoffice365.site> 1583784261 +0300	commit: Пример работы с конфигурацией.
+1bb5565c34b4bfdecce8d5d250a595902da9d6e7 ead750217e80b4c35fb6b25791dc0164611ccc21 fuser85 <fuser85@myoffice365.site> 1583784380 +0300	commit: Пример динамического чтения конфигурации
+ead750217e80b4c35fb6b25791dc0164611ccc21 9c719d8e7cf24d6ba73eb69009b1bb8b44286b4b fuser85 <fuser85@myoffice365.site> 1583784716 +0300	commit: Статическое содержимое сайта
+9c719d8e7cf24d6ba73eb69009b1bb8b44286b4b ad32e8c20e3aaffe75ebbac0c677004bbf673820 fuser85 <fuser85@myoffice365.site> 1583785600 +0300	commit: Первый контроллер
+ad32e8c20e3aaffe75ebbac0c677004bbf673820 2cfb94e49861789015b82dd2c06bd0a28cddd14a fuser85 <fuser85@myoffice365.site> 1583785809 +0300	commit: Статическая Html страница
+2cfb94e49861789015b82dd2c06bd0a28cddd14a 146201ffbf7f235ddbe7e6a0fb55313743c0fb40 fuser85 <fuser85@myoffice365.site> 1583788163 +0300	commit: Представление
+146201ffbf7f235ddbe7e6a0fb55313743c0fb40 3c290424f72ff5f51a3dee7398b4e7472bff1183 fuser85 <fuser85@myoffice365.site> 1583789492 +0300	commit: Пример работы с моделью

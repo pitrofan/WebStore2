@@ -1,0 +1,67 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[diff]
+	tool = vsdiffmerge
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepBackup = false
+[merge]
+	tool = vsdiffmerge
+[mergetool]
+	prompt = true
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustExitCode = true
+[remote "origin"]
+	url = https://github.com/selemeny/WebStore.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "Lesson-1"]
+	remote = origin
+	merge = refs/heads/Lesson-1
+	ghfvs-pr-owner-number = "selemeny#1"
+[branch "Lesson-2"]
+	remote = origin
+	merge = refs/heads/Lesson-2
+	ghfvs-pr-owner-number = "selemeny#2"
+[branch "Lesson-3"]
+	remote = origin
+	merge = refs/heads/Lesson-3
+	ghfvs-pr-owner-number = "selemeny#3"
+[user]
+	name = sel
+	email = sel@sel.ru
+[branch "Lesson-4"]
+	remote = origin
+	merge = refs/heads/Lesson-4
+	ghfvs-pr-owner-number = "selemeny#4"
+[branch "Lesson-5"]
+	remote = origin
+	merge = refs/heads/Lesson-5
+	ghfvs-pr-owner-number = "selemeny#5"
+[branch "HomeWork-5"]
+	remote = origin
+	merge = refs/heads/HomeWork-5
+	ghfvs-pr-owner-number = "selemeny#6"
+[branch "Lesson-6"]
+	remote = origin
+	merge = refs/heads/Lesson-6
+	ghfvs-pr-owner-number = "selemeny#7"
+[branch "Lesson-7"]
+	remote = origin
+	merge = refs/heads/Lesson-7
+	ghfvs-pr-owner-number = "selemeny#9"
+[branch "Lesson-8new2"]
+	remote = origin
+	merge = refs/heads/Lesson-8new2
+	ghfvs-pr-owner-number = "selemeny#11"

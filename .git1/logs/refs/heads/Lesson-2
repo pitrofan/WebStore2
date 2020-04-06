@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 a43da1e76031a2038acb6925f242d1e53a8c18fc fuser85 <fuser85@myoffice365.site> 1583789971 +0300	branch: Created from a43da1e76031a2038acb6925f242d1e53a8c18fc
+a43da1e76031a2038acb6925f242d1e53a8c18fc d7d1bb0ee3d1bfacfc1ba58017a3e033d4d35b82 fuser85 <fuser85@myoffice365.site> 1583831528 +0300	commit: Подключение динамической компиляции представлений Razor
+d7d1bb0ee3d1bfacfc1ba58017a3e033d4d35b82 af92e5b570dbaee6391d57249d3d4f8c6aa41a71 fuser85 <fuser85@myoffice365.site> 1583832481 +0300	commit: Ресурсы дизайнерского шаблона - стили, шрифты
+af92e5b570dbaee6391d57249d3d4f8c6aa41a71 da39fe5bbd0f46665a895a8e2990ec9ad77722f6 fuser85 <fuser85@myoffice365.site> 1583836927 +0300	commit: Разбиение макет-страницы на частичные представления
+da39fe5bbd0f46665a895a8e2990ec9ad77722f6 642656f35f194dbc3e00924bf81941c64909db3f fuser85 <fuser85@myoffice365.site> 1583839851 +0300	commit: Дизайн основных представлений
+642656f35f194dbc3e00924bf81941c64909db3f e8903b21398dc45a62bfd73947cc0ee99d9406ed fuser85 <fuser85@myoffice365.site> 1583853928 +0300	commit: Дизайн...
+e8903b21398dc45a62bfd73947cc0ee99d9406ed 84d97ff3579bc2c3a925d53af46dec8145485582 fuser85 <fuser85@myoffice365.site> 1583855132 +0300	commit: Сотрудники выделены в отдельный контроллер
+84d97ff3579bc2c3a925d53af46dec8145485582 f273f3a19c5ac9e5a3bd69e1e58acf67710274d3 fuser85 <fuser85@myoffice365.site> 1583859065 +0300	commit: Секции в макете
+f273f3a19c5ac9e5a3bd69e1e58acf67710274d3 dc0285c0ad75b507bdfaf612ff9d1fac9794cbe7 fuser85 <fuser85@myoffice365.site> 1583859751 +0300	commit: Связь с браузером
+dc0285c0ad75b507bdfaf612ff9d1fac9794cbe7 864bdc0e33fd02c94e722ed0bf365f41910cd3a4 fuser85 <fuser85@myoffice365.site> 1583862205 +0300	commit: Подключение клиентских библиотек
+864bdc0e33fd02c94e722ed0bf365f41910cd3a4 d26e20e73e8f265460546cadb53ea5ea31daed49 fuser85 <fuser85@myoffice365.site> 1583862440 +0300	commit (amend): Подключение клиентских библиотек

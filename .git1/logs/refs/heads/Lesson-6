@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1584739598 +0300	branch: Created from 06eb5e723a8c991943d75d4e7028a776c38a97ff
+06eb5e723a8c991943d75d4e7028a776c38a97ff f97ebfe662438abc04f573e071d5f021818ec6e6 sel <sel@sel.ru> 1584740523 +0300	commit: Подключение библиотеки Identity для доменной области
+f97ebfe662438abc04f573e071d5f021818ec6e6 306bd2d7e79237b37ad3c628f5ce6047cb0dc7cd sel <sel@sel.ru> 1584742024 +0300	commit: Сущности Пользователь и Роль
+306bd2d7e79237b37ad3c628f5ce6047cb0dc7cd 0807cba3678dfbd41aed9134a4af493fa74a7feb sel <sel@sel.ru> 1584742523 +0300	commit: Изменение типа контекста БД для обеспечения хранения учетных данных пользователей
+0807cba3678dfbd41aed9134a4af493fa74a7feb 69b562f67ea11153f56c8b5fc418ce08c64ae6cc sel <sel@sel.ru> 1584744341 +0300	commit: Миграция Identity
+69b562f67ea11153f56c8b5fc418ce08c64ae6cc b27d2fac76aada9f4da6e543b01b4f92115ec319 sel <sel@sel.ru> 1584747318 +0300	commit: Настройка системы авторизации
+b27d2fac76aada9f4da6e543b01b4f92115ec319 eb526e752232c139592df7be3dd58240e581d2e1 sel <sel@sel.ru> 1584747341 +0300	commit (amend): Настройка системы авторизации
+eb526e752232c139592df7be3dd58240e581d2e1 6db7c4b563812efb469ec214bcc83f9a82d6171b sel <sel@sel.ru> 1584749476 +0300	commit: Исправление нововедений .NET Core 3..1
+6db7c4b563812efb469ec214bcc83f9a82d6171b fa4aa9daf3a5f50d195aaa4f519dc5fd89275ca8 sel <sel@sel.ru> 1584750576 +0300	commit: Контроллер Account + представления к нему
+fa4aa9daf3a5f50d195aaa4f519dc5fd89275ca8 59495227d2221c42a4003d80b3c39d55c17ab90f sel <sel@sel.ru> 1584783306 +0300	commit: Модели представления механизма регистрации и авторизации
+59495227d2221c42a4003d80b3c39d55c17ab90f 4e706ea50c624bf4443a08ee7737cfb096fbc589 sel <sel@sel.ru> 1584786469 +0300	commit: Логика регистрации пользователя в системе
+4e706ea50c624bf4443a08ee7737cfb096fbc589 b57b74943a06efe66d88dbd57d85d13400cd79db sel <sel@sel.ru> 1584790180 +0300	commit: Редактируем заголовок для добавления ссылки на форму входа
+b57b74943a06efe66d88dbd57d85d13400cd79db 560094b841da9223706a82e4db68f600dcd9b47d sel <sel@sel.ru> 1584791372 +0300	commit: Визуальный компонент. Отображение информации пользователя в Header
+560094b841da9223706a82e4db68f600dcd9b47d acaf28152d00a6f7f6acb9c8b409b0d62c132878 sel <sel@sel.ru> 1584791670 +0300	commit: Удаление представления Login из контроллера Home
+acaf28152d00a6f7f6acb9c8b409b0d62c132878 be301dccc715def09b2d66464ec32206e763ee5d sel <sel@sel.ru> 1584793875 +0300	commit: Реализация механизма входа пользователя в систему
+be301dccc715def09b2d66464ec32206e763ee5d bcc4bb4ebdfec4a72d80b453b4d6240f473d4ac6 sel <sel@sel.ru> 1584794423 +0300	commit (amend): Реализация механизма входа пользователя в систему
+bcc4bb4ebdfec4a72d80b453b4d6240f473d4ac6 8355e8ed66a98d9014b79b3b8146965f38443e7a sel <sel@sel.ru> 1584794615 +0300	commit (amend): Реализация механизма входа пользователя в систему

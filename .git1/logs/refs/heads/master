@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 d9092041b12640e442819188fd6a28ec260de046 fuser85 <fuser85@myoffice365.site> 1583494966 +0300	commit (initial): Добавьте GITIGNORE- и GITATTRIBUTES-файлы.
+d9092041b12640e442819188fd6a28ec260de046 2f1a3bb4fd5896fe71542afe0631204f8d62e2ef fuser85 <fuser85@myoffice365.site> 1583494970 +0300	commit: Добавьте файлы проекта.
+2f1a3bb4fd5896fe71542afe0631204f8d62e2ef a43da1e76031a2038acb6925f242d1e53a8c18fc fuser85 <fuser85@myoffice365.site> 1583789900 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+a43da1e76031a2038acb6925f242d1e53a8c18fc d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 fuser85 <fuser85@myoffice365.site> 1583862927 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+d8fc3a5cbc4031ddc242f0321f903fb04a07c4a2 92d6ae7342c0da5b72461f15a20952875fcc3c44 fuser85 <fuser85@myoffice365.site> 1583933468 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+92d6ae7342c0da5b72461f15a20952875fcc3c44 82af87a3cd9bfb11dc0459b612da3d06406a82b8 sel <sel@sel.ru> 1584314560 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+82af87a3cd9bfb11dc0459b612da3d06406a82b8 ed166a8531a3f708dfb0b6b029134bc3072013b4 sel <sel@sel.ru> 1584646406 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+ed166a8531a3f708dfb0b6b029134bc3072013b4 06eb5e723a8c991943d75d4e7028a776c38a97ff sel <sel@sel.ru> 1584696653 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+06eb5e723a8c991943d75d4e7028a776c38a97ff 8060cabb5a0c6f082d3041366718288363751ab3 sel <sel@sel.ru> 1585142233 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+8060cabb5a0c6f082d3041366718288363751ab3 6aef18bb280262449fa58009ed6e2b0bc5487100 sel <sel@sel.ru> 1585397340 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward
+6aef18bb280262449fa58009ed6e2b0bc5487100 804a05498c2c6c072876b401f0052682d1a8c266 sel <sel@sel.ru> 1586190889 +0300	pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Fast-forward

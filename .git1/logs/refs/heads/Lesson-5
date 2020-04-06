@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 82af87a3cd9bfb11dc0459b612da3d06406a82b8 sel <sel@sel.ru> 1584523676 +0300	branch: Created from 82af87a3cd9bfb11dc0459b612da3d06406a82b8
+82af87a3cd9bfb11dc0459b612da3d06406a82b8 c82c6f2439083ae88a0e5c5b3340e691f29aafcc sel <sel@sel.ru> 1584538620 +0300	commit: Подготовка сущностей кразмещению в БД
+c82c6f2439083ae88a0e5c5b3340e691f29aafcc 16c89db7c8d8a91433f9f7228944034425e0dcc5 sel <sel@sel.ru> 1584539767 +0300	commit: Проект 'Слоя данных'
+16c89db7c8d8a91433f9f7228944034425e0dcc5 362daa3f7bc16b7314270465cc17d75bfb684aa1 sel <sel@sel.ru> 1584541687 +0300	commit: Контекст ДБ
+362daa3f7bc16b7314270465cc17d75bfb684aa1 20b6d0007db298f88a3d7fa65810ee3b4c28dcc1 sel <sel@sel.ru> 1584559045 +0300	commit: Инициализатор БД
+20b6d0007db298f88a3d7fa65810ee3b4c28dcc1 00f84997674bd006f9c6ac480f0161034491954f sel <sel@sel.ru> 1584613283 +0300	commit: Миграции
+00f84997674bd006f9c6ac480f0161034491954f 75aea8a4c65c75a49f7cc64f14e4f9cd402f0699 sel <sel@sel.ru> 1584622758 +0300	commit: Рефакторинг сервисов хранения данных в памяти
+75aea8a4c65c75a49f7cc64f14e4f9cd402f0699 b1468dacdee88b0b4713856fda92a47660dc4e0e sel <sel@sel.ru> 1584625161 +0300	commit: Сервис тваров в БД
+b1468dacdee88b0b4713856fda92a47660dc4e0e b4feae16953b857bfe4f3d24f85c3ff8bbf16d76 sel <sel@sel.ru> 1584627615 +0300	commit: Подключение сервисов БД товаров
+b4feae16953b857bfe4f3d24f85c3ff8bbf16d76 3415b5c16eee162ff3a8f3f7cf4bea091f8be38d sel <sel@sel.ru> 1584630326 +0300	commit: Восстановление работы главной страницы
+3415b5c16eee162ff3a8f3f7cf4bea091f8be38d f00e7162f05ff7570af3708001d59e5043448f0c sel <sel@sel.ru> 1584636646 +0300	commit: Проекция данных моделей
+f00e7162f05ff7570af3708001d59e5043448f0c f8fae84c061fa3b5f02dbd1e3990aacc1b4c04bf sel <sel@sel.ru> 1584636736 +0300	commit: Рефакторинг
