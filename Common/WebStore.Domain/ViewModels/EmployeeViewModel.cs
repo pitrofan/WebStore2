@@ -11,7 +11,7 @@ namespace WebStore.ViewModels
 	{
 		[HiddenInput(DisplayValue = false)]
 		public int Id { get; set; }
-
+		
 		[Display(Name = "Имя")]
 		[Required(AllowEmptyStrings = false, ErrorMessage = "Имя является обязательным")]
 		[StringLength(maximumLength: 200, MinimumLength = 3, ErrorMessage = "Длина строки от 3 до 200 символов")]
