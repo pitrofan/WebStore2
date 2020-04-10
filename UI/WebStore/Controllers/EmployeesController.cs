@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebStore.Data;
-using WebStore.Infrastructure.Interfaces;
 using WebStore.ViewModels;
 using WebStore.Infrastructure.Mapping;
 using WebStore.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using WebStore.Domain.Entities.Identity;
+using WebStore.Interfaces.Services;
 
 namespace WebStore.Controllers
 {

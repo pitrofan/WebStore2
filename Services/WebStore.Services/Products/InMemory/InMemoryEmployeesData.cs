@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebStore.Data;
 using WebStore.Domain.Entities;
-using WebStore.Infrastructure.Interfaces;
+using WebStore.Interfaces.Services;
 
 namespace WebStore.Infrastructure.Services.InMemory
 {
-	public class InMemoryEmployeesData : IEmployeesData
+    public class InMemoryEmployeesData : IEmployeesData
 	{
 		readonly List<Employee> _employees = TestData.Employees;
 
