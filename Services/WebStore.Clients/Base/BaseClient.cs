@@ -21,7 +21,6 @@ namespace WebStore.Clients.Base
                 BaseAddress = new Uri(configuration["WebApiURL"])
             };
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            
         }
 
 
