@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace WebStore.Clients.Base
 {
@@ -23,6 +25,41 @@ namespace WebStore.Clients.Base
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        protected T Get<T>(string url) where T : new() => GetAsync<T>(url).Result;
+
+
+        protected async Task<T> GetAsync<T>(string url, CancellationToken cancel = default) where T : new()
+        {
+            var response = await client.GetAsync(url, cancel);
+            if (response.IsSuccessStatusCode)
+                return await response.Content.ReadAsAsync<T>(cancel);
+
+            return new T();
+        }
+
+        protected HttpResponseMessage Post<T>(string url, T item) => PostAsync(url, item).Result;
+
+        protected async Task<HttpResponseMessage> PostAsync<T>(string url, T item, CancellationToken cancel = default)
+        {
+            var response = await client.PostAsJsonAsync(url, item, cancel);
+            return response.EnsureSuccessStatusCode();
+        }
+
+        protected HttpResponseMessage Put<T>(string url, T item) => PutAsync(url, item).Result;
+
+        protected async Task<HttpResponseMessage> PutAsync<T>(string url, T item, CancellationToken cancel = default)
+        {
+            var response = await client.PutAsJsonAsync(url, item, cancel);
+            return response.EnsureSuccessStatusCode();
+        }
+
+
+        protected HttpResponseMessage Delete<T>(string url) => DeleteAsync<T>(url).Result;
+
+        protected async Task<HttpResponseMessage> DeleteAsync<T>(string url, CancellationToken cancel = default)
+        {
+            return await client.DeleteAsync(url, cancel);
+        }
 
         #region IDisposable
         public void Dispose()
@@ -40,6 +77,5 @@ namespace WebStore.Clients.Base
             client.Dispose();
         }
         #endregion
-
     }
 }
