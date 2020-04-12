@@ -5,7 +5,7 @@ using WebStore.Domain.Entities.Base.Interfaces;
 
 namespace WebStore.Domain.DTO.Products
 {
-    class ProductDTO : INamedEntity, IOrderedEntity
+    public class ProductDTO : INamedEntity, IOrderedEntity
     {
         public string Name { get; set; }
 
