@@ -19,7 +19,9 @@ namespace WebStore.Infrastructure.Services.InSQL
 
 
 
-        public IEnumerable<Brand> GetBrands() => db.Brands.Include(brand => brand.Products).AsEnumerable();
+        public IEnumerable<Brand> GetBrands() => db.Brands
+            //.Include(brand => brand.Products)
+            .AsEnumerable();
 
         public ProductDTO GetProductById(int id) => db.Products
             .Include(x => x.Brand)
@@ -43,6 +45,8 @@ namespace WebStore.Infrastructure.Services.InSQL
             return query.AsEnumerable().Select(x => x.ToDTO());
         }
 
-        public IEnumerable<Section> GetSections() => db.Sections.Include(section => section.Products).AsEnumerable();
+        public IEnumerable<Section> GetSections() => db.Sections
+            //.Include(section => section.Products)
+            .AsEnumerable();
     }
 }
