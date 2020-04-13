@@ -45,7 +45,24 @@ namespace WebStore.ServiceHosting
             services.AddDbContext<WebStoreDB>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<User, Role>()
-                .AddEntityFrameworkStores<WebStoreDB>()
+                .AddEntityFrameworkStores<WebStoreDB>(opt =>
+                {
+                    opt.Password.RequiredLength = 3;    // Минимальная длина пароля = 
+                    opt.Password.RequireDigit = false;  // В пароле только цифры?
+                    opt.Password.RequireUppercase = false;  // В пароле буквы вернего регистра?
+                    opt.Password.RequireLowercase = true;   // В пароле буквы нижнего регистра?
+                    opt.Password.RequireNonAlphanumeric = false;    // В пароле обязательно должны быть символы НЕ алфавита
+                    opt.Password.RequiredUniqueChars = 3;   // В пароле уникальных символов = 
+
+                    //opt.User.AllowedUserNameCharacters = "abcdefghjklmnopqrstuvwxyzABCD....0123456789";	// Набор разрешенных символов для User
+                    opt.User.RequireUniqueEmail = false;    // Уникальный Email
+
+                    //opt.SignIn.;	// Подтверждение аккаунта/email/телефона ...
+
+                    opt.Lockout.AllowedForNewUsers = true;  // АвтоРАЗблокировка новыхюзеров (false - надо вручную подтверждать нового юзера)
+                    opt.Lockout.MaxFailedAccessAttempts = 10;   // Количество ввода не верного пароля доблокировки
+                    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);  // Время блокировки при неверном пароле
+                })
                 .AddDefaultTokenProviders();
         }
 
