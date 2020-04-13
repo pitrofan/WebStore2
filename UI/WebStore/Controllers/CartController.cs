@@ -67,7 +67,7 @@ namespace WebStore.Controllers
                     Price = x.Key.Price,
                     Quantity = x.Value
                 })
-                .ToList();
+                .ToList()
             };
 
             var order = await orderService.CreateOrderAsync(User.Identity.Name, orderModel);

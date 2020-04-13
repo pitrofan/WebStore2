@@ -21,11 +21,13 @@ namespace WebStore.ServiceHosting.Controllers
         public OrdersApiController(IOrderService orderService) => this.orderService = orderService;
 
 
+        [HttpPost("{Username?}")]
         public Task<OrderDTO> CreateOrderAsync(string Username, CreateOrderModel orderModel) => orderService.CreateOrderAsync(Username, orderModel);
 
+        [HttpGet("{id}")]
         public OrderDTO GetOrderById(int id) => orderService.GetOrderById(id);
 
-        [HttpGet()]
+        [HttpGet("user/{Username}")]
         public IEnumerable<OrderDTO> GetUserOrders(string Username) => orderService.GetUserOrders(Username);
     }
 }
