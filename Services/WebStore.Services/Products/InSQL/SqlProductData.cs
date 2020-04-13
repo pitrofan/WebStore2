@@ -31,7 +31,9 @@ namespace WebStore.Infrastructure.Services.InSQL
 
         public IEnumerable<ProductDTO> GetProducts(ProductFilter Filters = null)
         {
-            IQueryable<Product> query = db.Products;
+            IQueryable<Product> query = db.Products
+                .Include(x => x.Section)
+                .Include(x => x.Brand);
 
             if (Filters?.BrandId != null)
                 query = query.Where(product => product.BrandId == Filters.BrandId);

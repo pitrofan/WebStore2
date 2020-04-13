@@ -22,7 +22,7 @@ namespace WebStore.Clients.Products
         public ProductDTO GetProductById(int id) => Get<ProductDTO>($"{serviceAddress}/{id}");
 
         public IEnumerable<ProductDTO> GetProducts(ProductFilter Filters = null) =>
-            Post(serviceAddress, Filters)
+            Post(serviceAddress, Filters ?? new ProductFilter())
             .Content
             .ReadAsAsync<List<ProductDTO>>()
             .Result;
