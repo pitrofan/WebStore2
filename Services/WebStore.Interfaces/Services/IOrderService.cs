@@ -11,10 +11,10 @@ namespace WebStore.Infrastructure.Interfaces
 {
     public interface IOrderService
     {
-        IEnumerable<Order> GetUserOrders(string Username);
+        IEnumerable<OrderDTO> GetUserOrders(string Username);
 
-        Order GetOrderById(int id);
+        OrderDTO GetOrderById(int id);
 
-        Task<Order> CreateOrderAsync(string Username, CreateOrderModel orderModel);
+        Task<OrderDTO> CreateOrderAsync(string Username, CreateOrderModel orderModel);
     }
 }

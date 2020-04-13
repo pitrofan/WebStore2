@@ -9,6 +9,7 @@ using WebStore.Domain.DTO.Orders;
 using WebStore.Domain.Entities.Identity;
 using WebStore.Domain.Entities.Orders;
 using WebStore.Infrastructure.Interfaces;
+using WebStore.Services.Mapping;
 using WebStore.ViewModels;
 using WebStore.ViewModels.Orders;
 
@@ -24,7 +25,7 @@ namespace WebStore.Infrastructure.Services.InSQL
             this.userManager = userManager;
         }
 
-        public async Task<Order> CreateOrderAsync(string Username, CreateOrderModel orderModel)
+        public async Task<OrderDTO> CreateOrderAsync(string Username, CreateOrderModel orderModel)
         {
             var user = await userManager.FindByNameAsync(Username);
 
@@ -61,18 +62,20 @@ namespace WebStore.Infrastructure.Services.InSQL
                 await db.SaveChangesAsync();
                 await transaction.CommitAsync();
 
-                return order;
+                return order.ToDTO();
             }
         }
 
-        public Order GetOrderById(int id) => db.Orders
+        public OrderDTO GetOrderById(int id) => db.Orders
             .Include(x => x.OrderItems)
-            .FirstOrDefault(x => x.Id == id);
+            .FirstOrDefault(x => x.Id == id)
+            .ToDTO();
 
-        public IEnumerable<Order> GetUserOrders(string Username) => db.Orders
+        public IEnumerable<OrderDTO> GetUserOrders(string Username) => db.Orders
             .Include(x => x.User)
             .Include(x => x.OrderItems)
             .Where(x => x.User.UserName == Username)
-            .AsEnumerable();
+            .AsEnumerable()
+            .Select(x => x.ToDTO());
     }
 }
