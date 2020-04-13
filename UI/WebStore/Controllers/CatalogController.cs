@@ -29,14 +29,10 @@ namespace WebStore.Controllers
             {
                 SectionId = SectionId,
                 BrandId = BrandId,
-                Products = products.Select(x => new ProductViewModel
-                {
-                    Id = x.Id,
-                    Name = x.Name,
-                    Order = x.Order,
-                    Price = x.Price,
-                    ImageUrl = x.ImageUrl
-                }).OrderBy(x => x.Order)
+                Products = products
+                            .Select(ProductMapping.FromDTO)
+                            .Select(ProductMapping.ToView)
+                            .OrderBy(x => x.Order)
             });
         }
 
@@ -47,7 +43,7 @@ namespace WebStore.Controllers
             if (product is null)
                 return NotFound();
 
-            return View(product.ToView());
+            return View(product.FromDTO().ToView());
         }
     }
 }

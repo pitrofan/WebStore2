@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebStore.Domain.Entities;
+using WebStore.Domain.DTO.Products;
 
 namespace WebStore.Infrastructure.Interfaces
 {
@@ -28,14 +29,14 @@ namespace WebStore.Infrastructure.Interfaces
         /// </summary>
         /// <param name="Filters">Критерии поиска/фильтрации</param>
         /// <returns></returns>
-        IEnumerable<Product> GetProducts(ProductFilter Filters = null);
+        IEnumerable<ProductDTO> GetProducts(ProductFilter Filters = null);
 
         /// <summary>
         /// Получить товар по идентификатору
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Product GetProductById(int id);
+        ProductDTO GetProductById(int id);
 
     }
 }

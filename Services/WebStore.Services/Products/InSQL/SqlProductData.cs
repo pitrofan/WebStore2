@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebStore.DAL.Context;
+using WebStore.Domain.DTO.Products;
 using WebStore.Domain.Entities;
 using WebStore.Infrastructure.Interfaces;
+using WebStore.Infrastructure.Mapping;
 
 namespace WebStore.Infrastructure.Services.InSQL
 {
@@ -17,16 +19,21 @@ namespace WebStore.Infrastructure.Services.InSQL
 
 
 
-        public IEnumerable<Brand> GetBrands() => db.Brands.Include(brand => brand.Products).AsEnumerable();
+        public IEnumerable<Brand> GetBrands() => db.Brands
+            //.Include(brand => brand.Products)
+            .AsEnumerable();
 
-        public Product GetProductById(int id) => db.Products
+        public ProductDTO GetProductById(int id) => db.Products
             .Include(x => x.Brand)
             .Include(x => x.Section)
-            .FirstOrDefault(x => x.Id == id);
+            .FirstOrDefault(x => x.Id == id)
+            .ToDTO();
 
-        public IEnumerable<Product> GetProducts(ProductFilter Filters = null)
+        public IEnumerable<ProductDTO> GetProducts(ProductFilter Filters = null)
         {
-            IQueryable<Product> query = db.Products;
+            IQueryable<Product> query = db.Products
+                .Include(x => x.Section)
+                .Include(x => x.Brand);
 
             if (Filters?.BrandId != null)
                 query = query.Where(product => product.BrandId == Filters.BrandId);
@@ -37,9 +44,11 @@ namespace WebStore.Infrastructure.Services.InSQL
             if(Filters?.Ids?.Count > 0)
                 query = query.Where(product => Filters.Ids.Contains(product.Id));
 
-            return query.AsEnumerable();
+            return query.AsEnumerable().Select(x => x.ToDTO());
         }
 
-        public IEnumerable<Section> GetSections() => db.Sections.Include(section => section.Products).AsEnumerable();
+        public IEnumerable<Section> GetSections() => db.Sections
+            //.Include(section => section.Products)
+            .AsEnumerable();
     }
 }

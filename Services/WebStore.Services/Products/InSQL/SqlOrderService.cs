@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebStore.DAL.Context;
+using WebStore.Domain.DTO.Orders;
 using WebStore.Domain.Entities.Identity;
 using WebStore.Domain.Entities.Orders;
 using WebStore.Infrastructure.Interfaces;
+using WebStore.Services.Mapping;
 using WebStore.ViewModels;
 using WebStore.ViewModels.Orders;
 
@@ -23,7 +25,7 @@ namespace WebStore.Infrastructure.Services.InSQL
             this.userManager = userManager;
         }
 
-        public async Task<Order> CreateOrderAsync(string Username, CartViewModel cart, OrderViewModel orderModel)
+        public async Task<OrderDTO> CreateOrderAsync(string Username, CreateOrderModel orderModel)
         {
             var user = await userManager.FindByNameAsync(Username);
 
@@ -31,27 +33,27 @@ namespace WebStore.Infrastructure.Services.InSQL
             {
                 var order = new Order
                 {
-                    Name = orderModel.Name,
-                    Address = orderModel.Address,
-                    Phone = orderModel.Phone,
+                    Name = orderModel.orderViewModel.Name,
+                    Address = orderModel.orderViewModel.Address,
+                    Phone = orderModel.orderViewModel.Phone,
                     User = user,
                     Date = DateTime.Now
                 };
 
                 await db.AddAsync(order);
 
-                foreach(var (productModel, quantity) in cart.Items)
+                foreach(var item in orderModel.orderItems)
                 {
-                    var product = await db.Products.FirstOrDefaultAsync(x => x.Id == productModel.Id);
+                    var product = await db.Products.FirstOrDefaultAsync(x => x.Id == item.Id);
                     if(product is null)
-                        throw new InvalidOperationException($"Товар с Id: {productModel.Id} в базе данных не найден!");
+                        throw new InvalidOperationException($"Товар с Id: {item.Id} в базе данных не найден!");
 
                     var orderItem = new OrderItem
                     {
                         Order = order,
                         Product = product,
                         Price = product.Price,
-                        Quantity = quantity
+                        Quantity = item.Quantity
                     };
 
                     await db.OrderItems.AddAsync(orderItem);
@@ -60,18 +62,20 @@ namespace WebStore.Infrastructure.Services.InSQL
                 await db.SaveChangesAsync();
                 await transaction.CommitAsync();
 
-                return order;
+                return order.ToDTO();
             }
         }
 
-        public Order GetOrderById(int id) => db.Orders
+        public OrderDTO GetOrderById(int id) => db.Orders
             .Include(x => x.OrderItems)
-            .FirstOrDefault(x => x.Id == id);
+            .FirstOrDefault(x => x.Id == id)
+            .ToDTO();
 
-        public IEnumerable<Order> GetUserOrders(string Username) => db.Orders
+        public IEnumerable<OrderDTO> GetUserOrders(string Username) => db.Orders
             .Include(x => x.User)
             .Include(x => x.OrderItems)
             .Where(x => x.User.UserName == Username)
-            .AsEnumerable();
+            .AsEnumerable()
+            .Select(x => x.ToDTO());
     }
 }

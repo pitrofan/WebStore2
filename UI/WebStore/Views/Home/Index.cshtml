@@ -19,7 +19,7 @@
                 <partial name="Partial/_FeaturesItems" model="products"/>*@
 
 
-                <partial name="Partial/_FeaturesItems" model="@catalog.GetProducts().ToView()"/>
+                <partial name="Partial/_FeaturesItems" model="@catalog.GetProducts().Select(x => x.FromDTO()).ToView()"/>
 
                 <partial name="Partial/_CategoryTab" />
 
