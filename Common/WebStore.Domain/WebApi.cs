@@ -6,10 +6,10 @@ namespace WebStore.Domain
 {
     public static class WebApi
     {
-        public const string Employees = "api/employees"; 
+        public const string Employees = "api/v1/employees"; 
 
-        public const string Products = "api/products"; 
+        public const string Products = "api/v1/products"; 
 
-        public const string Orders = "api/orders"; 
+        public const string Orders = "api/v1/orders"; 
     }
 }
