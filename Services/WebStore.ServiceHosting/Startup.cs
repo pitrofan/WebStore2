@@ -44,8 +44,7 @@ namespace WebStore.ServiceHosting
 
             services.AddDbContext<WebStoreDB>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<User, Role>()
-                .AddEntityFrameworkStores<WebStoreDB>(opt =>
+            services.AddIdentity<User, Role>(opt =>
                 {
                     opt.Password.RequiredLength = 3;    // Минимальная длина пароля = 
                     opt.Password.RequireDigit = false;  // В пароле только цифры?
@@ -63,6 +62,7 @@ namespace WebStore.ServiceHosting
                     opt.Lockout.MaxFailedAccessAttempts = 10;   // Количество ввода не верного пароля доблокировки
                     opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);  // Время блокировки при неверном пароле
                 })
+                .AddEntityFrameworkStores<WebStoreDB>()
                 .AddDefaultTokenProviders();
         }
 

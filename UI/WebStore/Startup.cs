@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebStore.Clients.Employees;
+using WebStore.Clients.Identity;
 using WebStore.Clients.Orders;
 using WebStore.Clients.Products;
 using WebStore.Clients.Values;
@@ -41,8 +42,26 @@ namespace WebStore
 			services.AddTransient<WebStoreDBInitializer>();
 
 			services.AddIdentity<User, Role>()
-				.AddEntityFrameworkStores<WebStoreDB>()
+				//.AddEntityFrameworkStores<WebStoreDB>()
 				.AddDefaultTokenProviders();
+
+			#region WebApi Identity Client stores
+
+			services
+				.AddTransient<IUserStore<User>, UsersClient>()
+				.AddTransient<IUserPasswordStore<User>, UsersClient>()
+				.AddTransient<IUserEmailStore<User>, UsersClient>()
+				.AddTransient<IUserPhoneNumberStore<User>, UsersClient>()
+				.AddTransient<IUserTwoFactorStore<User>, UsersClient>()
+				.AddTransient<IUserLockoutStore<User>, UsersClient>()
+				.AddTransient<IUserClaimStore<User>, UsersClient>()
+				.AddTransient<IUserLoginStore<User>, UsersClient>()
+				;
+			services
+				.AddTransient<IRoleStore<Role>, RolesClient>()
+				;
+
+			#endregion
 
 			// Настройки конфигурации Identity 
 			services.Configure<IdentityOptions>(opt =>

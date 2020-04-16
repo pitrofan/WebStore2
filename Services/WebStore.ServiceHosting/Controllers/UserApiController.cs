@@ -30,7 +30,7 @@ namespace WebStore.ServiceHosting.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("AllUsers")]
         public async Task<IEnumerable<User>> GetAllUsers() => await userStore.Users.ToArrayAsync();
 
 
