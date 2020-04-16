@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +19,7 @@ using WebStore.Controllers;
 using WebStore.DAL.Context;
 using WebStore.Data;
 using WebStore.Domain.Entities.Identity;
+using WebStore.Infrastructure.AutoMapper;
 using WebStore.Infrastructure.Interfaces;
 using WebStore.Infrastructure.Services.InCookies;
 using WebStore.Infrastructure.Services.InMemory;
@@ -40,6 +42,12 @@ namespace WebStore
 			//services.AddDbContext<WebStoreDB>(opt =>
 			//	opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 			//services.AddTransient<WebStoreDBInitializer>();
+
+			services.AddAutoMapper(opt => 
+			{
+				opt.AddProfile<DTOMapping>();
+				opt.AddProfile<ViewModelsMapping>();
+			}, typeof(Startup)/*, typeof(EmployeesClient), typeof(InMemoryEmployeesData)*/);
 
 			services.AddIdentity<User, Role>()
 				//.AddEntityFrameworkStores<WebStoreDB>()
