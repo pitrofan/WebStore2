@@ -37,9 +37,9 @@ namespace WebStore
 		
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddDbContext<WebStoreDB>(opt =>
-				opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-			services.AddTransient<WebStoreDBInitializer>();
+			//services.AddDbContext<WebStoreDB>(opt =>
+			//	opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+			//services.AddTransient<WebStoreDBInitializer>();
 
 			services.AddIdentity<User, Role>()
 				//.AddEntityFrameworkStores<WebStoreDB>()
@@ -130,9 +130,9 @@ namespace WebStore
 
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, WebStoreDBInitializer db)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env/*, WebStoreDBInitializer db*/)
 		{
-			db.Initialize();
+			//db.Initialize();
 
 			if (env.IsDevelopment())
 			{
@@ -152,10 +152,10 @@ namespace WebStore
 
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapGet("/greetings", async context =>
-				{
-					await context.Response.WriteAsync(configuration["CustomGreetings"]);
-				});
+				//endpoints.MapGet("/greetings", async context =>
+				//{
+				//	await context.Response.WriteAsync(configuration["CustomGreetings"]);
+				//});
 
 				endpoints.MapControllerRoute(
 					name: "areas",
