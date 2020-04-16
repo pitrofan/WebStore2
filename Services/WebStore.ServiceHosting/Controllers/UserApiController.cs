@@ -45,7 +45,8 @@ namespace WebStore.ServiceHosting.Controllers
         [HttpPost("UserName/{name}")]
         public async Task SetUserNameAsync([FromBody] User user, string name, [FromServices] ILogger<UserApiController> Logger)
         {
-            Logger.LogInformation("Изменение имени пользователя {0} на {1}", user.Id, name);
+            //Logger.LogInformation("Изменение имени пользователя {0} на {1}", user.Id, name);
+            logger.LogInformation("Изменение имени пользователя {0} на {1}", user.Id, name);
             await userStore.SetUserNameAsync(user, name);
             await userStore.UpdateAsync(user);
         }
