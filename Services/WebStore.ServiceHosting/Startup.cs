@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using WebStore.DAL.Context;
 using WebStore.Data;
 using WebStore.Domain.Entities.Identity;
@@ -66,6 +68,20 @@ namespace WebStore.ServiceHosting
                 })
                 .AddEntityFrameworkStores<WebStoreDB>()
                 .AddDefaultTokenProviders();
+
+            services.AddSwaggerGen(opt => 
+            {
+                opt.SwaggerDoc("v1", new OpenApiInfo { Title = "WebStore.API", Version = "v1" });
+                opt.IncludeXmlComments("WebStore.ServiceHosting.xml");
+
+                const string domainDocXml = "WebStore.Domain.xml";
+                const string debugPath = @"bin\Debug\netcoreapp3.1";
+                if(File.Exists(domainDocXml))
+                    opt.IncludeXmlComments("WebStore.Domain.xml");
+                else if(File.Exists(Path.Combine(debugPath, domainDocXml)))
+                    opt.IncludeXmlComments(Path.Combine(debugPath, domainDocXml));
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +97,13 @@ namespace WebStore.ServiceHosting
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(opt => 
+            {
+                opt.SwaggerEndpoint("/swagger/v1/swagger.json", "WebStore.API");
+                opt.RoutePrefix = "";
+            });
 
             app.UseEndpoints(endpoints =>
             {
