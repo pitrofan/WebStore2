@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using WebStore.Clients.Employees;
 using WebStore.Clients.Identity;
 using WebStore.Clients.Orders;
@@ -21,11 +22,13 @@ using WebStore.Data;
 using WebStore.Domain.Entities.Identity;
 using WebStore.Infrastructure.AutoMapper;
 using WebStore.Infrastructure.Interfaces;
+using WebStore.Infrastructure.Middleware;
 using WebStore.Infrastructure.Services.InCookies;
 using WebStore.Infrastructure.Services.InMemory;
 using WebStore.Infrastructure.Services.InSQL;
 using WebStore.Interfaces.Api;
 using WebStore.Interfaces.Services;
+using WebStore.Logger;
 
 namespace WebStore
 {
@@ -138,8 +141,10 @@ namespace WebStore
 
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env/*, WebStoreDBInitializer db*/)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory log /*, WebStoreDBInitializer db*/)
 		{
+			log.AddLog4net();
+
 			//db.Initialize();
 
 			if (env.IsDevelopment())
@@ -157,6 +162,8 @@ namespace WebStore
 			app.UseAuthorization();
 
 			app.UseWelcomePage("/welcome");
+
+			app.UseMiddleware<ErrorHandlingMiddleware>();
 
 			app.UseEndpoints(endpoints =>
 			{

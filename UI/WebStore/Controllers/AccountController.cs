@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using WebStore.Domain.Entities.Identity;
 using WebStore.ViewModels.Identity;
 
@@ -14,11 +15,13 @@ namespace WebStore.Controllers
     {
         private readonly UserManager<User> userManager;
         private readonly SignInManager<User> signInManager;
+        private readonly ILogger<AccountController> logger;
 
-        public AccountController(UserManager<User> UserManager, SignInManager<User> SignInManager)
+        public AccountController(UserManager<User> UserManager, SignInManager<User> SignInManager, ILogger<AccountController> logger)
         {
             userManager = UserManager;
             signInManager = SignInManager;
+            this.logger = logger;
         }
 
 
@@ -38,18 +41,26 @@ namespace WebStore.Controllers
             //};
             var user = mapper.Map<User>(Model);
 
-            var registerResult = await userManager.CreateAsync(user, Model.Password);
-
-            if (registerResult.Succeeded)
+            using (logger.BeginScope("Создание нового пользователя {0}", Model.UserName))
             {
-                await userManager.AddToRoleAsync(user, Role.User);
+                var registerResult = await userManager.CreateAsync(user, Model.Password);
 
-                await signInManager.SignInAsync(user, false);
-                return RedirectToAction("Index", "Home");
+                if (registerResult.Succeeded)
+                {
+                    logger.LogInformation("Пользователь {0} успешно зарегистрирован", Model.UserName);
+
+                    await userManager.AddToRoleAsync(user, Role.User);
+                    logger.LogInformation("Пользователю {0} добавлена роль {1}", Model.UserName, Role.User);
+
+                    await signInManager.SignInAsync(user, false);
+                    return RedirectToAction("Index", "Home");
+                }
+
+                foreach (var error in registerResult.Errors)
+                    ModelState.AddModelError("", error.Description);
+                    
+                logger.LogError("Ошибка при создании пользователя {0}:{1}", Model.UserName, string.Join(", ", registerResult.Errors.Select(x => x.Description)));
             }
-
-            foreach (var error in registerResult.Errors)
-                ModelState.AddModelError("", error.Description);
 
             return View(Model);
         }
@@ -67,19 +78,25 @@ namespace WebStore.Controllers
 
             if (loginResult.Succeeded)
             {
+                logger.LogInformation("Пользователь {0} успешно вошел в систему.", Model.UserName);
                 if (Url.IsLocalUrl(Model.ReturnUrl))
                     return Redirect(Model.ReturnUrl);
-                RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home");
             }
 
             ModelState.AddModelError("", "Не верное имя пользователя или пароль.");
+            logger.LogWarning("Ошибка ввода учетных данных пользователем {0}", Model.UserName);
 
             return View(Model);
         }
 
         public async Task<IActionResult> Logout() 
         {
+            var username = User.Identity.Name;
             await signInManager.SignOutAsync();
+
+            logger.LogInformation("Пользователь {0} вышел из системы.", username);
+
             return RedirectToAction("Index", "Home");
         }
     }
