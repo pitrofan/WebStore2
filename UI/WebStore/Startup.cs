@@ -22,6 +22,7 @@ using WebStore.Data;
 using WebStore.Domain.Entities.Identity;
 using WebStore.Infrastructure.AutoMapper;
 using WebStore.Infrastructure.Interfaces;
+using WebStore.Infrastructure.Middleware;
 using WebStore.Infrastructure.Services.InCookies;
 using WebStore.Infrastructure.Services.InMemory;
 using WebStore.Infrastructure.Services.InSQL;
@@ -161,6 +162,8 @@ namespace WebStore
 			app.UseAuthorization();
 
 			app.UseWelcomePage("/welcome");
+
+			app.UseMiddleware<ErrorHandlingMiddleware>();
 
 			app.UseEndpoints(endpoints =>
 			{
