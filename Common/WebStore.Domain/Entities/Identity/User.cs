@@ -9,8 +9,8 @@ namespace WebStore.Domain.Entities.Identity
     {
         //public string Description { get; set; }
 
-        public const string Administrator = "Admin";
-        public const string AdminDefaultPassword = "AdminPassword";
+        public const string Administrator = "admin";
+        public const string AdminDefaultPassword = "admin";
 
     }
 }
