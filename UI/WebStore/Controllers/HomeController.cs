@@ -30,5 +30,8 @@ namespace WebStore.Controllers
         //public IActionResult CheckOut() => View();
 
         public IActionResult ContactUs() => View();
+
+
+        public IActionResult ErrorStatus(string Code) => View();
     }
 }
