@@ -32,6 +32,6 @@ namespace WebStore.Controllers
         public IActionResult ContactUs() => View();
 
 
-        public IActionResult ErrorStatus(string Code) => View();
+        public IActionResult ErrorStatus(string Code) => RedirectToAction(nameof(Error404));
     }
 }
