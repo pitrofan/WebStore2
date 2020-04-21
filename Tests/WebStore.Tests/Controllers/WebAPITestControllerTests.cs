@@ -36,6 +36,9 @@ namespace WebStore.Tests.Controllers
             var model = Assert.IsAssignableFrom<IEnumerable<string>>(viewResult.Model);
 
             Assert.Equal(expectedResult.Length, model.Count());
+
+            valueServiceMock.Verify(x => x.GetAsync());
+            valueServiceMock.VerifyNoOtherCalls();
         }
     }
 }
