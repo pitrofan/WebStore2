@@ -19,6 +19,8 @@ namespace WebStore.Clients.Products
 
         public IEnumerable<Brand> GetBrands() => Get<List<Brand>>($"{serviceAddress}/brands");
 
+        public BrandDTO GetBrandById(int id) => Get<BrandDTO>($"{serviceAddress}/brands/{id}");
+
         public ProductDTO GetProductById(int id) => Get<ProductDTO>($"{serviceAddress}/{id}");
 
         public IEnumerable<ProductDTO> GetProducts(ProductFilter Filters = null) =>
@@ -28,5 +30,7 @@ namespace WebStore.Clients.Products
             .Result;
 
         public IEnumerable<Section> GetSections() => Get<List<Section>>($"{serviceAddress}/sections");
+
+        public SectionDTO GetSectionById(int id) => Get<SectionDTO>($"{serviceAddress}/sections/{id}");
     }
 }
