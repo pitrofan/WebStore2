@@ -18,10 +18,14 @@ namespace WebStore.Infrastructure.Services.InSQL
         public SqlProductData(WebStoreDB _db) => db = _db;
 
 
+        public SectionDTO GetSectionById(int id) => db.Sections.FirstOrDefault(s => s.Id == id).ToDTO();
+
 
         public IEnumerable<Brand> GetBrands() => db.Brands
             //.Include(brand => brand.Products)
             .AsEnumerable();
+
+        public BrandDTO GetBrandById(int id) => db.Brands.Find(id).ToDTO();
 
         public ProductDTO GetProductById(int id) => db.Products
             .Include(x => x.Brand)
