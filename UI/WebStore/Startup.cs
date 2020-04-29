@@ -160,6 +160,9 @@ namespace WebStore
 			app.UseStaticFiles(); // Статические файлы
 			app.UseDefaultFiles();
 
+			app.UseStatusCodePages();
+			app.UseStatusCodePagesWithReExecute("/Home/ErrorStatus", "?Code={0}");
+
 			app.UseRouting();
 
 			app.UseAuthentication();

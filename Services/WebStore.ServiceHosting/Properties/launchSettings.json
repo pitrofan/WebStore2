@@ -19,7 +19,7 @@
     },
     "WebStore.ServiceHosting": {
       "commandName": "Project",
-      "launchBrowser": true,
+      //"launchBrowser": true,
       "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
